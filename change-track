@@ -1,3 +1,6 @@
 Hi there,
 
 This file will be used to track the changes.
+
+Changes:
+1. Updated the /Dockerfile to removed the Python installation and base image
