@@ -1,5 +1,6 @@
-FROM ubuntu:22.04
-RUN sudo apt update -y && sudo apt install -y nodejs npm 
+FROM registry.redhat.io/ubi8/nodejs-18
+USER root
+RUN yum install -y nodejs npm 
 RUN npm install -g yarn \
     npm install -g cypress
 
